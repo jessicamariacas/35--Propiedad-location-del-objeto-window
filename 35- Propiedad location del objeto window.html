@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jessica Maria</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function redireccionar() {
+            var numero;
+            numero = Math.random() * 3;//se guarda en num un valor comprendido entre 0.00001 y 2.99999
+            numero = parseInt(numero);//guardamos solo la parte entera de la variable num
+            if (numero == 0) {
+                window.location = 'http://www.outlook.com';
+            }
+            if (numero == 1) {
+                window.location = 'http://www.yahoo.com';
+            }
+            if (numero == 2) {
+                window.location = 'http://www.gmail.com';
+            }
+        }
+    </script>
+
+    <button onClick="redireccionar()">presionar el boton</button>
+</body>
+
+</html>
